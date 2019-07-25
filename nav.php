@@ -2,12 +2,12 @@
 <div style="width:100%;height:60px;background:#ffeb3b;">
 <button id=""
         class="mdl-button mdl-js-button mdl-button--icon" style="margin-right:250px;margin-top:10px;">
-  <i class="material-icons">navigate_before</i>
+<a href="index.php">  <i class="material-icons">navigate_before</i></a>
 </button>
 
-  <button id="" onclick="panier.php"
+  <button id=""
           class="mdl-button mdl-js-button mdl-button--icon" style="margin-top:10px;">
-    <i class="material-icons">add_shopping_cart</i>
+  <a href="panier.php">    <i class="material-icons">add_shopping_cart</i></a>
   </button>
   <button id="demo-menu-lower-right"
           class="mdl-button mdl-js-button mdl-button--icon bp"style="margin-left: 10px;margin-top:10px;">

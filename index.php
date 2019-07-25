@@ -38,6 +38,22 @@ include 'nav.php';
     </div>
 
 
+
+
+        <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-left: 20px;margin-top: 20px; width: 150px; height: 150px;">
+          <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/rice.jpg') bottom right 40% no-repeat;">
+            <h2 class="mdl-card__title-text" >Reisgerichte</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+          Alle Pizzen sind mit Tomatensauce, Goudakase und Oregano
+          </div>
+          <div class="mdl-card__actions mdl-card--border" style="background:#ef5350;">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+         voir options
+            </a>
+          </div>
+        </div>
+
         <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-left:200px;margin-top: 20px; width: 150px; height: 150px;">
           <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/pasta2.jpg') bottom right 40% no-repeat;">
             <h2 class="mdl-card__title-text" >Nudeln</h2>
@@ -45,12 +61,23 @@ include 'nav.php';
           <div class="mdl-card__supporting-text">
             <strong>Alle Pizzen sind mit Tomatensauce, Goudakase und Oregano</strong>
             <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" style="background:red">
-    <i class="material-icons">add</i>
-  </button>
-</div>
-
+          <i class="material-icons">navigate_next</i>
+        </button>
+      </div>
         </div>
 
+
+        <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-left:200px;margin-top: 20px; width: 150px; height: 150px;">
+          <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/grill2.jpg') bottom right 40% no-repeat;">
+            <h2 class="mdl-card__title-text" >Grillgerichte</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <strong>Alle Pizzen sind mit Tomatensauce, Goudakase und Oregano</strong>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" style="background:red">
+          <i class="material-icons">navigate_next</i>
+        </button>
+        </div>
+        </div>
 
 
   </div>
