@@ -54,7 +54,7 @@ table.panier tr td{padding:8px;}
 
 
       <i class="material-icons">place</i>
-    <strong style="color:black;"> Landgrafenstrasse 87   Dortmund</strong>
+    <strong style="color:black;"> Landgrafenstrasse 87   44139 Dortmund</strong>
 
     <hr>
 
