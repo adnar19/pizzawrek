@@ -17,16 +17,40 @@ include 'nav.php'
    <body style="background: #ffecb3; position: relative;">
 <div class="" style="margin-top:30px;margin-left:15px;">
 
-  <i class="material-icons">add_shopping_cart</i>
+  <i class="material-icons">shopping_cart</i>
 <strong> Votre panier:</strong>
 
 <hr>
+
+<table >
+  <tr>
+    <td>1X</td>
+    <td>pizza viande hachée</td>
+    <td>500da</td>
+    <td><i class="material-icons">delete</i></td>
+  </tr>
+  <tr>
+    <td style="width:20px;">1X</td>
+    <td style="width:250px;">pizza thon</td>
+    <td>550da</td>
+    <td><i class="material-icons">delete</i></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+<br>
 <i class="material-icons">local_taxi</i>
 <strong> Frais de livraison: 300da</strong>
 <hr>
 <br>
 
-<strong> Prix total: 300da</strong>
+<strong> Prix total: 1350da</strong>
 <br>
 <br>
 
@@ -90,9 +114,6 @@ include 'nav.php'
 
     }
 
-
-
-    initMap();
 
 
     </script>
