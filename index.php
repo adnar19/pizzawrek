@@ -1,133 +1,121 @@
 <?php
+if (!isset($_COOKIE['gid'])) {
+  setcookie("gid", RandomString(), time()+3600000,"/", "", 0);
+}
 
-include 'nav.php';
 
+function RandomString()
+{
+    $characters = '0123456789ABCDEFGHJKL';
+    $randstring = '';
+    for ($i = 0; $i < 8; $i++) {
+        $randstring .= $characters[rand(0, strlen($characters))];
+    }
+    return $randstring;
+}
  ?>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <script src="mdl/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <title></title>
-  </head>
-  <body style="
-  background: #ffecb3;
-  position: relative;">
 
 
-<div  class="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="mdl/material.min.css" >
+<script src="mdl/material.min.js" charset="utf-8"></script>
+<style media="screen">
+  .infos {
+    position:fixed;left:0;right:0;top:0;bottom:0;
+    display: none;pointer-events: none;z-index: 0;
+    background: #fff;
+  }
+.infos.aff {
+  display: block;
+  pointer-events: auto;
+  z-index: 10;
 
-  <div class="demo-card-square mdl-card mdl-shadow--2dp" style=" width: 310px; height: 150px;margin-top:30px;margin-left:30px;">
-     <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/pizza1.jpg') bottom right 40% no-repeat;">
-       <h2 class="mdl-card__title-text" >ANGEBOT 1 (12)</h2>
-     </div>
-     <div class="mdl-card__supporting-text">  <strong>2Gr. Pizzen mit <br>2 Belägen <br>+1l Getränk </strong>
-       <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" style="background:red;margin-left:150px;">
-     <i class="material-icons">navigate_next</i>
-   </button>
-     </div>
+}
+</style>
 
-   </div>
+</head>
+<body style="background:#fff176">
 
+<div class="mdl-card__actions">
+  <img src=images/pizzawerk3.png style=" height:220px;margin-left:70px;margin-top:200px;"></img>
+</div>
+<div align="center">
 
-
-
-
+<div class="mdl-spinner mdl-js-spinner is-active"></div>
+</div>
+</div>
 
 
 
+<div class="infos">
 
-<table style="margin-top:10px;margin-left:30px;">
-  <tr >
-<td>  <div class="demo-card-square mdl-card mdl-shadow--2dp" style=" width: 150px; height: 150px;margin-top:30px;margin-right:10px;">
-    <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/pizza4.jpg') bottom right 40% no-repeat;">
-      <h2 class="mdl-card__title-text" >Pizzen</h2>
+     <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="nom">
+      <label class="mdl-textfield__label" for="nom">Nom...</label>
     </div>
-    <div class="mdl-card__supporting-text">  <strong>Alle Pizzen sind mit Tomatensauce, Goudakase und Oregano</strong>
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" style="background:red">
-    <i class="material-icons">navigate_next</i>
-  </button>
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="adr">
+      <label class="mdl-textfield__label" for="adr">Adresse...</label>
     </div>
-
-  </div>
-</td>
-
-
-
-
-
-    <td>
-        <div class="demo-card-square mdl-card mdl-shadow--2dp" style=" width: 150px; height: 150px;margin-top:30px;">
-        <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/rice.jpg') bottom right 40% no-repeat;">
-          <h2 class="mdl-card__title-text" >Reisgerichte</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <strong>Alle Pizzen sind mit Tomatensauce, Goudakase und Oregano</strong>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" style="background:red">
-        <i class="material-icons">navigate_next</i>
-      </button>
-        </div>
-      </div>
-    </td>
-  </tr>
-
-
-
-  <tr >
-    <td>
-      <div class="demo-card-square mdl-card mdl-shadow--2dp" style=" width: 150px; height: 150px;margin-top:30px;margin-right:10px;">
-        <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/pasta2.jpg') bottom right 40% no-repeat;">
-          <h2 class="mdl-card__title-text" >Nudeln</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <strong>Alle Pizzen sind mit Tomatensauce, Goudakase und Oregano</strong>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" style="background:red">
-        <i class="material-icons">navigate_next</i>
-      </button>
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="tel">
+      <label class="mdl-textfield__label" for="tel">Tel...</label>
     </div>
-      </div>
-    </td>
+<br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="sauvegarder()">
+      SAVE
+    </button>
+
+
+
+</div>
+
+
+</body>
+
+
+<script type="text/javascript">
+// localStorage.nom = '';
+// localStorage.adresse = '';
+// localStorage.tel = '';
+// localStorage.gps = '';
+
+
+function sauvegarder(){
+localStorage.nom = document.querySelector('#nom').value;
+localStorage.adresse = document.querySelector('#adr').value;
+localStorage.tel = document.querySelector('#tel').value;
+
+verifierLesInfos();
+}
+
+
+window.onload = verifierLesInfos;
+ function verifierLesInfos () {
+if (localStorage.nom == undefined) {
+document.querySelector('.infos').classList.add('aff');
+} else {
+   window.location.href = "acceuil.php";
+}
+}
 
 
 
 
-    <td>
 
-              <div class="demo-card-square mdl-card mdl-shadow--2dp" style=" width: 150px; height: 150px;margin-top:30px;">
-                <div class="mdl-card__title mdl-card--expand" style="color:white;background:url('images/grill2.jpg') bottom right 40% no-repeat;">
-                  <h2 class="mdl-card__title-text" >Grillgerichte</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  <strong>Alle Pizzen sind mit Tomatensauce, Goudakase und Oregano</strong>
-                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" style="background:red">
-                <i class="material-icons">navigate_next</i>
-              </button>
-              </div>
-              </div>
-    </td>
-  </tr>
-</table>
+
+
+
+</script>
 
 
 
 
 
 
-
-
-
-
-
-
-  </div>
-
-
-
-
-  </body>
 </html>
