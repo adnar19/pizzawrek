@@ -16,7 +16,7 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">PizzaWerk</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="description.php"></b>ABOUT</b></a>
+      <a class="mdl-navigation__link" href="description.php"><b>Über uns</b></a>
       <?php
 
       $result_one = $file_db->query("SELECT * FROM categorie ");

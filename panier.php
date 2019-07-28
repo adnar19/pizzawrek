@@ -72,7 +72,7 @@ $montant = 0;
 
 <div class="mdl-textfield mdl-js-textfield">
   <input class="mdl-textfield__input" type="text" id="nom">
-  <label class="mdl-textfield__label" for="nom">Nom...</label>
+  <label class="mdl-textfield__label" for="nom">Name...</label>
 </div>
 <div class="mdl-textfield mdl-js-textfield">
   <input class="mdl-textfield__input" type="text" id="adresse">
@@ -80,10 +80,10 @@ $montant = 0;
 </div>
 <div class="mdl-textfield mdl-js-textfield">
   <input class="mdl-textfield__input" type="text" id="tel">
-  <label class="mdl-textfield__label" for="tel">telephone...</label>
+  <label class="mdl-textfield__label" for="tel">Telefonnummer...</label>
 </div>
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"onclick="Confirmer(this)">
-  Confirmer
+  Bestätigen
 </button>
 
 </div>
@@ -92,13 +92,13 @@ $montant = 0;
 
 
 <hr>
-<h3>Mes commandes</h3>
+<h3>Meine Bestellungen</h3>
 <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
   <thead>
     <tr>
-      <th class="mdl-data-table__cell--non-numeric">Date</th>
-      <th>Montant</th>
-      <th>Etat</th>
+      <th class="mdl-data-table__cell--non-numeric">Datum</th>
+      <th>Betrag</th>
+      <th>Zustand</th>
     </tr>
   </thead>
   <tbody>

@@ -56,7 +56,7 @@ function RandomString()
 
      <div class="mdl-textfield mdl-js-textfield">
       <input class="mdl-textfield__input" type="text" id="nom">
-      <label class="mdl-textfield__label" for="nom">Nom...</label>
+      <label class="mdl-textfield__label" for="nom">Name...</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield">
       <input class="mdl-textfield__input" type="text" id="adr">
@@ -64,11 +64,11 @@ function RandomString()
     </div>
     <div class="mdl-textfield mdl-js-textfield">
       <input class="mdl-textfield__input" type="text" id="tel">
-      <label class="mdl-textfield__label" for="tel">Tel...</label>
+      <label class="mdl-textfield__label" for="tel">Telefonnummer...</label>
     </div>
 <br>
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="sauvegarder()">
-      SAVE
+      Sparen
     </button>
 
 
