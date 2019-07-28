@@ -87,7 +87,7 @@ if (isset($_GET['cid'])) {
 $result_one = $file_db->query("SELECT * FROM menu $condition");
 foreach($result_one as $row) {
  // print_r($row);
- $image = ($row['image']== ''?'':'style="background:url(\'images/'.$row['image'].'\');background-size:co"');
+ $image = ($row['image']== ''?'':'style="background:url(\'images/'.$row['image'].'\');background-size:cover"');
  print '<div class="demo-card-event mdl-card mdl-shadow--2dp">';
  print '<div class="mdl-card__title mdl-card--expand" '.$image.'>';
  print '<h4>'.$row['nom'].'</h4> </div>';
